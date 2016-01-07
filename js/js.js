@@ -9,6 +9,9 @@ setInterval(function() {
 }, 1000)
 request.get(url)
   .end(function(e, res) {
+    if (e) {
+      alert(e);
+    }
     var bod = res.text;
     // Get rid of that xml.
     parseString(bod, function(err, result) {
