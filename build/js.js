@@ -13,6 +13,9 @@ function tryToFetchSomething() {
     .end(function(e, res) {
       if (e) {
         alert(e);
+        alert(res.statusCode);
+        alert(JSON.stringify(res)) // rly?
+        return;
       }
       var bod = res.text;
       // Get rid of that xml.
