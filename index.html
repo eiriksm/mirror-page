@@ -15,14 +15,26 @@
     h1 {
       color: #fff;
     }
-    .weather a {
-      display: none;
+    .weatherline {
+      width: 50%;
+      float: left;
+      text-align: center;
+      margin: 15px 0;
+    }
+    .temp {
+      font-size: 35px;
+    }
+    #clock {
+      color: #fff;
+      text-align: center;
+      text-transform: uppercase;
     }
   </style>
   </head>
   <body>
-    <div class="weather">
-      <script src="http://www.yr.no/place/Norway/Sør-Trøndelag/Trondheim/Trondheim/external_box_stripe.js"></script><noscript><a href="http://www.yr.no/place/Norway/Sør-Trøndelag/Trondheim/Trondheim/">yr.no: Forecast for Trondheim</a></noscript>
+    <div id="clock"></div>
+    <div id="weather" class="weather">
     </div>
+    <script src="build/js.js"></script>
   </body>
 </html>
