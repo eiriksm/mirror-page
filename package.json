@@ -25,5 +25,8 @@
     "superagent": "^1.6.1",
     "watchify": "^3.6.1",
     "xml2js": "^0.4.15"
+  },
+  "dependencies": {
+    "superagent": "^1.6.1"
   }
 }

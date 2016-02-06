@@ -6,10 +6,24 @@
     <meta http-equiv="refresh" content="600">
     <meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css"/>
+    <style>
+    .tw {
+      display: inline-block;
+      min-width: 125px;
+    }
+    .bustime {
+      padding: 5px;
+      font-size: 1.5em;
+      white-space: nowrap;
+    }
     body {
       background: black;
     }
+    #busmode {
+      display: none;
+    }
+    body,
     .weather,
     a,
     h1 {
@@ -33,9 +47,13 @@
   </head>
   <body>
     <div id="clock"></div>
-    <div id="weather" class="weather">
+    <div id="weathermode">
+      <div id="weather" class="weather">
+      </div>
     </div>
+    <div id="busmode">
+      <div id="bus">
+      </div>
     <script src="build/js.js"></script>
-    <script src="https://jsonp.afeld.me/?callback=callback&url=http://www.yr.no/place/Norway/S%C3%B8r-Tr%C3%B8ndelag/Trondheim/Trondheim/forecast.xml"></script>
   </body>
 </html>
