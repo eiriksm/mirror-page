@@ -31,9 +31,11 @@ var symbols = {
   12: 'wi-sleet',
   9: 'wi-hail',
   7: 'wi-day-sleet',
+  10: 'wi-rain',
   13: 'wi-snow',
   3: 'wi-cloudy',
-  4: 'wi-cloud'
+  4: 'wi-cloud',
+  8: 'wi-snow'
 }
 
 
